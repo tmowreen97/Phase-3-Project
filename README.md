@@ -18,7 +18,20 @@ The genres table has the following columns:
 
 Feel free to explore the database!
 
+## Installation
 
-In order to install this application, you must have Ruby and Node Package Manager installed. Start by forking and creating a copy of this repo. Once you do that, you can click the 'Code' button to copy the SSH key and perform a 'git clone' with that *SSH* in your terminal. When you're done with that, you're ready to run the sever (bundle exec rake server) and start using MovieZone!
+In order to install this application, you must have Ruby and Node Package Manager installed. 
+
+Start by forking and creating a copy of this repo. Once you do that, you can click the 'Code' button to copy the SSH key and perform a 'git clone' with that *SSH* in your terminal. 
+
+When you're done with that, you need to install all the dependencies. Run *'bundle install'* in your terminal. 
+
+All the migration files are in place, all you have to do is run *'bundle exec rake db:migrate'* to create the database. 
+
+Make sure everythings running smoothly, run *'bundle exec rake db:migrate:status'* and check the status is up for both migrations. Lastly, you can check the schema to make sure the above tables are displayed. 
+
+You're ready to run the sever, run *'bundle exec rake server'*. 
+
+You're all set with you're backend, just make sure you're front end is running as well and you're ready to use MovieZone!
 
 
