@@ -15,7 +15,7 @@ class ApplicationController < Sinatra::Base
 
   get "/genres" do 
     genres = Genre.all
-    genres.to_json(include: :movies )
+    genres.to_json(include: :movies)
   end
 
   get "/genres/names" do 
@@ -28,7 +28,7 @@ class ApplicationController < Sinatra::Base
       name: params[:name],
       description: params[:description]
     )
-    genre.to_json
+    genre.to_json(include: :movies)
   end
 
   post "/movies" do
