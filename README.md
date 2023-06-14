@@ -28,7 +28,9 @@ When you're done with that, you need to install all the dependencies. First ensu
 
 All the migration files are in place, all you have to do is run *'bundle exec rake db:migrate'* to create the database. 
 
-Make sure everythings running smoothly, run *'bundle exec rake db:migrate:status'* and check the status is up for both migrations. Lastly, you can check the schema to make sure the above tables are displayed. 
+Make sure everythings running smoothly, run *'bundle exec rake db:migrate:status'* and check the status is up for both migrations. You can check the schema to make sure the above tables are displayed. 
+
+To seed the information into the database run *'bundle exec rake db:seed'*.
 
 You're ready to run the sever, run *'bundle exec rake server'*. 
 
