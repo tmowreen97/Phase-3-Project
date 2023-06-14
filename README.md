@@ -24,7 +24,7 @@ In order to install this application, you must have Ruby and Node Package Manage
 
 Start by forking and creating a copy of this repo. Once you do that, you can click the 'Code' button to copy the SSH key and perform a 'git clone' with that *SSH* in your terminal. 
 
-When you're done with that, you need to install all the dependencies. Run *'bundle install'* in your terminal. 
+When you're done with that, you need to install all the dependencies. First ensure you're in the correct directory by running cd Phase-3-Project in your terminal. Then run *'bundle install'* in your terminal. 
 
 All the migration files are in place, all you have to do is run *'bundle exec rake db:migrate'* to create the database. 
 
